@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        .background{
+            width: 50px;
+            height: 50px;
+            position:absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            right: 50px;
+        }
+        .background .shape{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .shape:first-child{
+            .background:linear-gradlent(#1845ad,#23a2f6);
+            left: -80%;
+            top:-80%;
+        }
+        .shape:last-child{
+            background: linear-gradient(to ringht,#ff400f,#f09819);
+            right: -30px;
+            bottom: -30px;
+        }
+        form{
+            height: 520px;
+            width: 400px;
+            background-color:black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            border: 2px solid rgba(pink, green, gray, alpha);
+            padding: 50px 35px;
+        }
+        form * {
+            font-family: "Poppins", sans-serif;
+            color: rgb(4, 0, 255);
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input{
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: yellowgreen;
+            border-radius: 3px;
+            padding: 0 10px;
+            margin top: 8px;
+            font top 14px;
+            font-weight:300;
+
+        }
+        ::placeholder{
+            color: snow;
+        }
+        button{
+            margin-top: 50px;
+            width: 50px;
+            background-color: bisque;
+            
+        }
+        button * {
+            margin-top: 50px;
+            width: 50px;
+            background-color: rgb(231, 165, 22);
+        }
+    </style>
+</head>
+<body>
+   <div> 
+    <script>alert("Xin chao")</script>
+   </div>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login here</h3>
+        <label form="username">username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password"id="password">
+        <button>Log in</button>
+        <div class="social">
+            <div class="go"><button><i class="fab fa google"><a href="https://www.google.com/">Google</a></i></button></div>        
+            <div class="fb"><i class="fab fa-facebook"></i>Facebook</div>
+        </div>
+    </form>
+</body>
+</html
